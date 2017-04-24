@@ -1,0 +1,27 @@
+<div class="my-portfolio layout-column">
+    <div style="margin-bottom: 50px;">
+        <div class="myName">
+            <span>Ranga</span>
+            <span [ngStyle]="{'color': appColor}">Eragamreddy</span>
+        </div>
+    </div>
+    <div>
+        <md-grid-list cols="7">
+            <md-grid-tile colspan=1 rowspan=2>
+                <div [ngStyle]="{'color': appColor}" class="layout-column layout-align-center-start" style="height: 100%; width: 100%;">
+                    <a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> About </a>
+                    <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Experience </a>
+                    <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>
+                    <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Education </a>
+                    <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Contact </a>
+                </div>
+            </md-grid-tile>
+            <md-grid-tile #activeRoute colspan=5 rowspan=2>
+                <router-outlet></router-outlet>
+            </md-grid-tile>
+            <md-grid-tile colspan=1 rowspan=2>
+                <app-connect style="height: 100%"></app-connect>
+            </md-grid-tile>
+        </md-grid-list>
+    </div>
+</div>

@@ -1,0 +1,13 @@
+.app-summary {
+    font-size: 16px;
+    font-family: "proxima nova light", "Helvetica Neue", Helvetica, Arial, Sans-serif;
+}
+
+.app-summary .image-circle {
+    max-height: 150px;
+    display: block;
+    border-radius: 1000px;
+}
+.app-summary .my-summary {
+    padding: 20px;
+}
