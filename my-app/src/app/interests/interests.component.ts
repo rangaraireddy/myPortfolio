@@ -22,44 +22,28 @@ export class InterestsComponent implements OnInit, OnDestroy {
     githubLogoPosition: Position = new Position();
     materialLogoPosition: Position = new Position();
     htmlLogoPosition: Position = new Position();
+    cssPosition: Position = new Position();
+    javaScriptPosition: Position = new Position();
+    jqueryPosition: Position = new Position();
 
     logoPositionCollection: Position[] = [
+        this.htmlLogoPosition,
+        this.cssPosition,
+        this.javaScriptPosition,
+        this.jqueryPosition,
         this.angularLogoPosition,
-        this.githubLogoPosition,
         this.materialLogoPosition,
-        this.htmlLogoPosition
+        this.githubLogoPosition
     ];
 
-    constructor(private route: ActivatedRoute, private _interestsService: InterestsService) {}
-    // ngOnInit(): void {
-    //     this.position.top = '0';
-    //     this.position.left = '0';
-    //     this.data.height = this.route.snapshot.params.height;
-    //     this.data.width = this.route.snapshot.params.width;
-    //     this.intervalId = setInterval(() => {
-    //         this.position.top = Math.abs(((Math.random() * this.data.height) - 50)) + 'px';
-    //         this.position.left = Math.abs(((Math.random() * this.data.width) - 50)) + 'px';
-    //     }, 1000);
-    // }
+    constructor(private route: ActivatedRoute, private _interestsService: InterestsService) {}   
     ngOnInit(): void {
         this.data.height = this.route.snapshot.params.height;
         this.data.width = this.route.snapshot.params.width;
-        this.intervalId = setInterval(() => {
-            this.logoPositionCollection = this._interestsService.getRandomStyles(this.logoPositionCollection, this.data.height, this.data.width);
-        }, 1000);
-        console.log(this.logoPositionCollection);
-
-
-
-
-        // this.position.top = '0';
-        // this.position.left = '0';
-        // this.data.height = this.route.snapshot.params.height;
-        // this.data.width = this.route.snapshot.params.width;
         // this.intervalId = setInterval(() => {
-        //     this.position.top = Math.abs(((Math.random() * this.data.height) - 50)) + 'px';
-        //     this.position.left = Math.abs(((Math.random() * this.data.width) - 50)) + 'px';
+        //     this.logoPositionCollection = this._interestsService.getRandomStyles(this.logoPositionCollection, this.data.height, this.data.width);
         // }, 1000);
+        console.log(this.logoPositionCollection);
     }
     ngOnDestroy(): void {
         clearInterval(this.intervalId);
