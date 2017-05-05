@@ -1,1 +1,11 @@
-Welcome to the hub!!
+<div class="education-details layout-column layout-align-space-around-start">
+    <div *ngFor="let item of educationDetails;" class="eachSection">
+        <h4 class="headerSection">
+           {{item.header}}
+        </h4>
+        <div class="contentSection">
+            {{item.contextTop}} <br />
+             {{item.contextBottom}}
+        </div>
+    </div>
+</div>

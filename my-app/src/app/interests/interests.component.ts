@@ -40,9 +40,9 @@ export class InterestsComponent implements OnInit, OnDestroy {
     ngOnInit(): void {
         this.data.height = this.route.snapshot.params.height;
         this.data.width = this.route.snapshot.params.width;
-        // this.intervalId = setInterval(() => {
-        //     this.logoPositionCollection = this._interestsService.getRandomStyles(this.logoPositionCollection, this.data.height, this.data.width);
-        // }, 1000);
+        this.intervalId = setInterval(() => {
+            this.logoPositionCollection = this._interestsService.getRandomStyles(this.logoPositionCollection, this.data.height, this.data.width);
+        }, 1000);
         console.log(this.logoPositionCollection);
     }
     ngOnDestroy(): void {
