@@ -1,27 +1,32 @@
 <div class="my-portfolio layout-column">
-    <div style="margin-bottom: 50px;">
+    <div>
         <div class="myName">
             <span>Ranga</span>
             <span [ngStyle]="{'color': appColor}">Eragamreddy</span>
+             <!--<span>Lorem</span>
+            <span [ngStyle]="{'color': appColor}">Ipsumesrrs</span>-->
         </div>
     </div>
-    <div>
-        <md-grid-list cols="7">
-            <md-grid-tile colspan=1 rowspan=2>
-                <div [ngStyle]="{'color': appColor}" class="layout-column layout-align-center-start" style="height: 100%; width: 100%;">
-                    <a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> About </a>
-                    <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Experience </a>
-                    <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>
-                    <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Education </a>
-                    <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Contact </a>
-                </div>
-            </md-grid-tile>
-            <md-grid-tile #activeRoute colspan=5 rowspan=2>
-                <router-outlet></router-outlet>
-            </md-grid-tile>
-            <md-grid-tile colspan=1 rowspan=2>
-                <app-connect style="height: 100%"></app-connect>
-            </md-grid-tile>
-        </md-grid-list>
+    <div class="layout-column flex">       
+        <div class="flex-20">
+            <div [ngStyle]="{'color': appColor}" class="layout-row layout-align-space-between-center" style="height: 100%; width: 100%; border-bottom: 1px solid lightgrey;">
+                <a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> About </a>
+                <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Experience </a>
+                <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>
+                <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Education </a>
+                <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Contact </a>
+                <!--<a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> Lorem </a>
+                <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Ipsum </a>
+                <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Valkyre </a>
+                <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Gyspe </a>
+                <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Waryie </a>-->
+            </div>
+        </div>
+        <div #activeRoute class="flex">
+            <router-outlet></router-outlet>
+        </div>
+        <!--<div class="flex-10">
+            <app-connect style="height: 100%"></app-connect>
+        </div>-->
     </div>
 </div>

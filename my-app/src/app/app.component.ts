@@ -13,8 +13,8 @@ export class AppComponent implements AfterViewInit {
   constructor() {}
   ngAfterViewInit() {
     setTimeout(() => {
-      this.gridHeight = this.activeRoute._element.nativeElement.offsetHeight;
-      this.gridWidth = this.activeRoute._element.nativeElement.offsetWidth;
+      this.gridHeight = this.activeRoute.nativeElement.offsetHeight - 50;
+      this.gridWidth = this.activeRoute.nativeElement.offsetWidth - 50;
     });
   }
 }

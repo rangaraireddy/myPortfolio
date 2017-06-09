@@ -1,1 +1,30 @@
-Welcome to the band!!
+<div class="contact-details layout-column layout-align-space-around-center">
+    <div class="comment-section layout-column">
+        <p>
+            Liked my profile and want to reach out to me for any job opportunity?
+            <br />
+            Please comment below.
+        </p>
+        <form class="comment-form">
+            <md-input-container class="comment-input-container">
+                <textarea name="text-area" mdInput placeholder="Comments" class="comment-text-area" (change)="hasCommented($event)">{{commentToRRR}}</textarea>
+            </md-input-container>
+            <div style="text-align: right;"><button md-raised-button [disabled]="!commentToRRR" (click)="submitComment()" class="my-button">Submit</button></div>
+        </form>
+        <strong [ngStyle]="displayStyle"> {{displayNote}} </strong>
+    </div>
+    <div class="button-section layout-row layout-align-space-around-center">
+        <a md-fab href="https://www.facebook.com/its.RRR" target="_blank">
+            <md-icon class="mdi mdi-facebook icon-details"></md-icon>
+        </a>
+        <a md-fab href="https://www.twitter.com/rangaraii" target="_blank">
+            <md-icon class="mdi mdi-twitter icon-details"></md-icon>
+        </a>
+        <a md-fab href="https://www.github.com/rangaraireddy/myPortfolio" target="_blank">
+            <md-icon class="mdi mdi-github-circle icon-details"></md-icon>
+        </a>
+        <a md-fab href="mailto:rangaraireddy@gmail.com?Subject=Hello RRR" target="_top">
+            <md-icon class="mdi mdi-email-open icon-details"></md-icon>
+        </a>
+    </div>
+</div>

@@ -13,7 +13,6 @@ import { EducationComponent } from './education/education.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { InterestsComponent } from './interests/interests.component';
 import { SummaryComponent } from './summary/summary.component';
-import { ConnectComponent } from './connect/connect.component';
 
 @NgModule({
   imports: [
@@ -30,8 +29,7 @@ import { ConnectComponent } from './connect/connect.component';
     ContactComponent,
     EducationComponent,
     ExperienceComponent,
-    InterestsComponent,
-    ConnectComponent
+    InterestsComponent
   ],
   providers: [],
   bootstrap: [AppComponent]

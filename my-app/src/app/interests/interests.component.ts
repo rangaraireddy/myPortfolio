@@ -43,7 +43,6 @@ export class InterestsComponent implements OnInit, OnDestroy {
         this.intervalId = setInterval(() => {
             this.logoPositionCollection = this._interestsService.getRandomStyles(this.logoPositionCollection, this.data.height, this.data.width);
         }, 1000);
-        console.log(this.logoPositionCollection);
     }
     ngOnDestroy(): void {
         clearInterval(this.intervalId);
