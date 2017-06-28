@@ -9,7 +9,7 @@
 .experience-details .eachSection {
     width: 100%;
     border-bottom: 1px solid lightgrey;
-    padding: 10px 0;
+    margin: 10px 0;
 }
 
 .experience-details .headerSection {
@@ -34,7 +34,7 @@
 
 .experience-details .contentSection .dashed {
     margin: 5px;
-    font-size: 16px;
+    font-size: 14px;
     list-style-type: none;
 }
 
