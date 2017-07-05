@@ -12,7 +12,7 @@
 .app-summary .image-circle {
     max-height: 150px;
     display: block;
-    border-radius: 1000px;
+    /*border-radius: 1000px;*/
 }
 .app-summary .my-summary {
     padding: 20px;

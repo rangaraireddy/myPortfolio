@@ -38,6 +38,10 @@
     list-style-type: none;
 }
 
+.experience-details .contentSection .dashed .exp-links {
+    position: absolute;
+}
+
 .experience-details .contentSection .dashed > li{
     padding: 3px;
 }

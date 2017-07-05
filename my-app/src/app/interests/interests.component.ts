@@ -25,15 +25,21 @@ export class InterestsComponent implements OnInit, OnDestroy {
     cssPosition: Position = new Position();
     javaScriptPosition: Position = new Position();
     jqueryPosition: Position = new Position();
+    bootstrapPosition: Position = new Position();
+    pythonPosition: Position = new Position();
+    typescriptPosition: Position = new Position();
 
     logoPositionCollection: Position[] = [
         this.htmlLogoPosition,
         this.cssPosition,
         this.javaScriptPosition,
+        this.typescriptPosition,
         this.jqueryPosition,
         this.angularLogoPosition,
+        this.bootstrapPosition,
         this.materialLogoPosition,
-        this.githubLogoPosition
+        this.githubLogoPosition,
+        this.pythonPosition
     ];
 
     constructor(private route: ActivatedRoute, private _interestsService: InterestsService) {}   
