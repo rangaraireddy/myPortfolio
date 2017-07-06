@@ -1,4 +1,4 @@
-<div class="skills-list">
+<!--<div class="skills-list">
     <ul class="list-section">
         <li class='my-skills' [ngStyle]="htmlLogoPosition"> 
             <img [ngStyle]="customDimensions" src="assets/HTML5_Logo_512.png">
@@ -29,6 +29,23 @@
         </li>
         <li class='my-skills' [ngStyle]="pythonPosition"> 
             <img [ngStyle]="customDimensions" src="assets/python.png">
+        </li>
+    </ul>
+</div>-->
+
+
+
+
+
+
+
+
+
+<div class="skills-list">
+    <ul class="list-section">
+        <li class='my-skills' *ngFor="let skill of skills;"> 
+            <img [ngStyle]="customDimensions" src= {{skill.icon}} >
+            <div class="skill-name">{{skill.name}}</div>
         </li>
     </ul>
 </div>

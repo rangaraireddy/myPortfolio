@@ -4,8 +4,6 @@
         <div class="myName">
             <span>Ranga RR </span>
             <span [ngStyle]="{'color': appColor}">Eragamreddy</span>
-             <!--<span>Lorem</span>
-            <span [ngStyle]="{'color': appColor}">Ipsumesrrs</span>-->
         </div>
     </div>
     <div class="layout-column flex">       
@@ -13,21 +11,14 @@
             <div [ngStyle]="{'color': appColor}" class="layout-row layout-align-space-between-center" style="height: 100%; width: 100%; border-bottom: 1px solid lightgrey;">
                 <a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> About </a>
                 <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Experience </a>
-                <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>
+                <a md-raised-button class="my-button" routerLink="/baratheon" routerLinkActive="active"> Skills </a>
+                <!--<a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>-->
                 <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Education </a>
                 <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Contact </a>
-                <!--<a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> Lorem </a>
-                <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Ipsum </a>
-                <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Valkyre </a>
-                <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Gyspe </a>
-                <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Waryie </a>-->
             </div>
         </div>
         <div #activeRoute class="flex">
             <router-outlet></router-outlet>
         </div>
-        <!--<div class="flex-10">
-            <app-connect style="height: 100%"></app-connect>
-        </div>-->
     </div>
 </div>
