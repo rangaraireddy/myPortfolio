@@ -1,4 +1,4 @@
-<img src="assets/got.jpg" style="position: fixed; opacity: 0.3; height: 100%; width: 100%;">
+<img src="assets/profilepic.JPG" style="position: fixed; opacity: 0.1; height: 100%; width: 100%;">
 <div class="my-portfolio layout-column">
     <div>
         <div class="myName">
@@ -11,8 +11,7 @@
             <div [ngStyle]="{'color': appColor}" class="layout-row layout-align-space-between-center" style="height: 100%; width: 100%; border-bottom: 1px solid lightgrey;">
                 <a md-raised-button class="my-button" routerLink="/house" routerLinkActive="active"> About </a>
                 <a md-raised-button class="my-button" routerLink="/stark" routerLinkActive="active"> Experience </a>
-                <a md-raised-button class="my-button" routerLink="/baratheon" routerLinkActive="active"> Skills </a>
-                <!--<a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>-->
+                <a md-raised-button class="my-button" [routerLink]="['/baratheon',gridHeight, gridWidth]" routerLinkActive="active"> Skills </a>
                 <a md-raised-button class="my-button" routerLink="/targeryn" routerLinkActive="active"> Education </a>
                 <a md-raised-button class="my-button" routerLink="/lannister" routerLinkActive="active"> Contact </a>
             </div>

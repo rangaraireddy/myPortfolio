@@ -1,9 +1,8 @@
-/*:host, .skills-list {
+:host, .skills-list {
   display: block;
   width: 100%;
   height: 100%;
 }
-
 .skills-list .list-section {
     padding: 0;
     margin: 0;            
@@ -18,35 +17,22 @@
     list-style-type: none;
     float: left;
     transition: top 800ms linear, left 800ms linear;
-}*/
-
-
-
-
-
-:host, .skills-list {
-    display: block;
-    width: 100%;
-    height: 100%;
 }
-
-.skills-list .list-section {
+.skills-list .list-section-later {
     padding: 0;
     margin: 0;            
     text-align: left;
     color: #666666;
     position: relative;
 }
-
-.skills-list .list-section .my-skills {
+.skills-list .list-section-later .my-skills-later {
     width: 50px;
     height:50px;
     padding: 50px;
     list-style-type: none;
     float: left;
 }
-
-.skills-list .list-section .my-skills .skill-name {
+.skills-list .list-section-later .my-skills-later .skill-name {
     font-size: 11px;
     text-align: -webkit-center;
 }

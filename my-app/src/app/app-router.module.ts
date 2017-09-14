@@ -30,7 +30,7 @@ const routes: Routes = [
     component: EducationComponent
   },
   {
-    path: 'baratheon',
+    path: 'baratheon/:height/:width',
     component: InterestsComponent
   }
 ];

@@ -1,5 +1,5 @@
-<!--<div class="skills-list">
-    <ul class="list-section">
+<div class="skills-list">
+    <ul *ngIf="!staticPosition" class="list-section">
         <li class='my-skills' [ngStyle]="htmlLogoPosition"> 
             <img [ngStyle]="customDimensions" src="assets/HTML5_Logo_512.png">
         </li>
@@ -10,7 +10,7 @@
             <img [ngStyle]="customDimensions" src="assets/javascript.png">
         </li>
         <li class='my-skills' [ngStyle]="typescriptPosition"> 
-            <img [ngStyle]="customDimensions" src="assets/typescript.svg">
+            <img [ngStyle]="customDimensions" src="assets/typescript.png">
         </li>
         <li class='my-skills' [ngStyle]="jqueryPosition">
             <img [ngStyle]="customDimensions" src="assets/jquery.png">
@@ -24,6 +24,24 @@
         <li class='my-skills' [ngStyle]="materialLogoPosition"> 
             <img [ngStyle]="customDimensions" src="assets/angularmaterial.png">
         </li>
+        <li class='my-skills' [ngStyle]="cSharpLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/c-sharp.png">
+        </li>
+        <li class='my-skills' [ngStyle]="javaLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/java.png">
+        </li>
+        <li class='my-skills' [ngStyle]="mysqlLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/mysql.png">
+        </li>
+        <li class='my-skills' [ngStyle]="postgresqlLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/postgresql.png">
+        </li>
+        <li class='my-skills' [ngStyle]="sqlalchemyLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/sqlalchemy.png">
+        </li>
+        <li class='my-skills' [ngStyle]="dxLogoPosition"> 
+            <img [ngStyle]="customDimensions" src="assets/dx.jpg">
+        </li>
         <li class='my-skills' [ngStyle]="githubLogoPosition"> 
             <img [ngStyle]="customDimensions" src="assets/github-icon.svg">
         </li>
@@ -31,19 +49,8 @@
             <img [ngStyle]="customDimensions" src="assets/python.png">
         </li>
     </ul>
-</div>-->
-
-
-
-
-
-
-
-
-
-<div class="skills-list">
-    <ul class="list-section">
-        <li class='my-skills' *ngFor="let skill of skills;"> 
+    <ul *ngIf="staticPosition" class="list-section-later">
+        <li class='my-skills-later' *ngFor="let skill of skills;"> 
             <img [ngStyle]="customDimensions" src= {{skill.icon}} >
             <div class="skill-name">{{skill.name}}</div>
         </li>
